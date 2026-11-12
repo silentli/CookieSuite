@@ -60,9 +60,9 @@ Confirm that a new backup appears after the scheduled time.
 
 **Notes / Potential Improvements**
 
-**Permissions:** Consider a dedicated backup user with limited privileges instead of root, without unrestricted Docker access.
+- **Permissions:** Consider a dedicated backup user with limited privileges instead of root, without unrestricted Docker access.
 
-**Backup storage:** Consider cloud or external storage. Automate retention and cleanup using object storage lifecycle rules or local scripts.
+- **Backup storage:** Consider cloud or external storage. Automate retention and cleanup using object storage lifecycle rules or local scripts.
 - **Recovery:** Test restoration into a separate database. Archive checks alone do not prove recovery works.
 - **Configuration:** Back up `.env` separately. Database role definitions are not included in this single-database dump.
 - **Automation:** Automate directory and Cron setup without overwriting existing settings; add failure notifications.
