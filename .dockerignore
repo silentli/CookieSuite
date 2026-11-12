@@ -3,3 +3,7 @@
 auth.json
 vendor
 node_modules
+scripts/
+Dockerfile
+compose.yaml
+.dockerignore
