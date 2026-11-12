@@ -36,19 +36,8 @@ write_value() {
 }
 
 if [ "$new_environment" = true ]; then
-    write_value APP_NAME CookieSuite
     write_value APP_ENV production
     write_value APP_DEBUG false
-    write_value APP_URL http://localhost:8080
-    write_value DB_CONNECTION pgsql
-    write_value DB_HOST db
-    write_value DB_PORT 5432
-    write_value DB_DATABASE cookiesuite
-    write_value DB_USERNAME cookiesuite
-    write_value LOG_CHANNEL stderr
-    write_value LOG_LEVEL info
-    # Until the SMTP task is completed, record emails without delivering them.
-    write_value MAIL_MAILER log
 fi
 
 database_password=$(read_value DB_PASSWORD)
