@@ -1,0 +1,5 @@
+.git
+.env*
+auth.json
+vendor
+node_modules
